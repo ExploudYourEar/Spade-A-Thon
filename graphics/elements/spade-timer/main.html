@@ -1,0 +1,37 @@
+<link rel="import" href="../../../../../bower_components/polymer/polymer-element.html">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<dom-module id="spade-timer">
+    <template>
+      <style>
+        .background{
+          position:relative;
+        }
+      .timer{
+        position:absolute;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        top:15px;
+        left:20px;
+        width:400px;
+        font-family: 'Press Start 2P', cursive;
+        font-size:50px;
+        color:whitesmoke;
+      }
+      </style>
+
+      
+      <img class="background" src="./elements/images/timer_background.png">
+      <div class="timer">
+        <span hidden=[[_lessThanEqZero(hours)]]>{{hours}}</span>
+        <span hidden=[[_lessThanEqZero(hours)]] >:</span>
+        <span hidden=[[_lessThanEqZero(minutes)]]>[[_padTime(minutes)]]</span>
+        <span hidden=[[_lessThanEqZero(minutes)]]>:</span>
+        <span>{{_padTime(seconds)}}</span>
+      </div>
+
+    </template>
+
+    <script src='script.js'></script>
+
+  </dom-module>

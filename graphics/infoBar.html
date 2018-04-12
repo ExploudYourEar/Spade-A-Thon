@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="import" href="elements/spade-timer/main.html">
+    <link rel="import" href="elements/runners-test/main.html">
+    <style>
+        html{
+            background-image: url("elements/images/bar_background.png");
+            background-repeat: no-repeat;
+        }    
+        .PressStart2P
+        {
+            font-family: 'Press Start 2P', cursive;
+            color : whitesmoke;
+
+        }
+        .icon
+        {
+            position:absolute;
+            top:7px;
+            left:40px;
+
+        }
+        .text
+        {
+            position:absolute;
+            top:10px;
+            left:120px;
+        }
+        .hidden
+        {
+            visibility: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="PressStart2P">
+        <div id="welcome" style="padding-left:40px;">
+            <img class="icon" src="elements/images/sk.png">
+            <span id="welcomeText" class="text"></span>
+        </div>
+        <div id="nextrun" class="hidden">
+            <img class="icon"  src="elements/images/black.png">
+            <span id="nextrunText" class="text"></span>
+        </div>
+        <div id="why" class="hidden">
+            <img class="icon" src="elements/images/plague.png">
+            <span id="whyText" class="text"></span>
+        </div>
+    </div>
+  </body>
+    <script src="infobar.js"></script>
+</html>

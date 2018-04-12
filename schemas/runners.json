@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "name1": {
+            "type": "string",
+            "description": "Name of first runner",
+            "default": ""
+        },
+        "name2": {
+            "type": "string",
+            "description": "Name of second runner",
+            "default": ""
+        },
+        "name3": {
+            "type": "string",
+            "description": "Name of third runner",
+            "default": ""
+        },
+        "name4": {
+            "type": "string",
+            "description": "Name of fourth runner",
+            "default": ""
+        },
+        "time1": {
+            "type": "string",
+            "description": "Time of first runner",
+            "default": ""
+        },
+        "time2": {
+            "type": "string",
+            "description": "Time of second runner",
+            "default": ""
+        },
+        "time3": {
+            "type": "string",
+            "description": "Time of third runner",
+            "default": ""
+        },
+        "time4": {
+            "type": "string",
+            "description": "Time of fourth runner",
+            "default": ""
+        },
+        "place1": {
+            "type": "number",
+            "description": "place of first runner",
+            "default": 0
+        },
+        "place2": {
+            "type": "number",
+            "description": "place of second runner",
+            "default": 0
+        },
+        "place3": {
+            "type": "number",
+            "description": "place of third runner",
+            "default": 0
+        },
+        "place4": {
+            "type": "number",
+            "description": "place of fourth runner",
+            "default": 0
+        },
+        "forfeited1": {
+            "type": "boolean",
+            "description": "Runner 1 has forfeited if true",
+            "default": false
+        },
+        "forfeited2": {
+            "type": "boolean",
+            "description": "Runner 2 has forfeited if true",
+            "default": false
+        },
+        "forfeited3": {
+            "type": "boolean",
+            "description": "Runner 3 has forfeited if true",
+            "default": false
+        },
+        "forfeited4": {
+            "type": "boolean",
+            "description": "Runner 4 has forfeited if true",
+            "default": false
+        }
+    },
+    "required":[
+        "name1",
+        "name2",
+        "name3",
+        "name4",
+        "time1",
+        "time2",
+        "time3",
+        "time4",
+        "place1",
+        "place2",
+        "place3",
+        "place4",
+        "forfeited1",
+        "forfeited2",
+        "forfeited3",
+        "forfeited4"]
+       
+}

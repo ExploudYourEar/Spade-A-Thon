@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "hours": {
+            "type": "number",
+            "description": "Hours as a Number.",
+            "default": 0
+        },
+        "minutes": {
+            "type": "number",
+            "description": "Minutes as a Number.",
+            "default": 0
+        },
+        "seconds":{
+            "type":"number",
+            "description": "Seconds as a Number.",
+            "default": 0
+        },
+        "started":{
+            "type":"boolean",
+            "description": "False if the timer didn't start and True if it already started",
+            "default":false
+        },
+        "paused":{
+            "type":"boolean",
+            "description": "True if the timer is paused and false if not",
+            "default":false
+        },
+        "startString":{
+            "type":"string",
+            "descritpion":"String Value of Start/Stop Button",
+            "default":"Start"
+        },
+        "pauseString":{
+            "type":"string",
+            "description":"Strint Value of Pause/Unpause Button",
+            "default":"Pause"
+        }
+
+        
+    },
+    "required": ["hours", "minutes","seconds","started","paused"]
+}

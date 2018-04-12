@@ -1,0 +1,53 @@
+<link rel="import" href="../../../../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../../../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../../../../bower_components/iron-form/iron-form.html">
+
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<dom-module id="runners-control">
+    <template>
+      <style>
+            
+        .thinBorder
+        {
+            border-style :solid;
+            border-width : 1px;
+            border-color : black;
+            margin-bottom : 1%;
+        }  
+        .background{
+          position:relative;
+        }
+        .controls
+        {
+            
+            width: 410px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .PressStart2P
+        {
+            font-family: 'Press Start 2P', cursive;
+
+        }
+      </style>
+      <h1 class = "PressStart2P">Runners Name</h1>
+      <div class="controls thinBorder PressStart2P">
+                <div style="padding-left:5px;padding-top:5px;">
+                  <span>Runner 1</span>
+                  <input id="runner1" type='text'>
+                  <span>Runner 2</span>
+                  <input id="runner2"type='text'>
+                  <span>Runner 3</span>
+                  <input id="runner3" type='text'>
+                  <span>Runner 4</span>
+                  <input id="runner4" type='text'>
+                </div>
+          <paper-button on-click="_submitForm">Submit</paper-button>
+      </div>
+
+    </template>
+
+    <script src='script.js'></script>
+
+  </dom-module>

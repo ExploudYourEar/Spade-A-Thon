@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "welcome":{
+            "type":"string",
+            "description":"Text Value of the welcome Div",
+            "default":"Welcome to Spade-A-Thon The Shovel Knight Speedrun Community Marathon"
+            
+        },
+        "nextrun":
+        {
+            "type":"string",
+            "description":"Text Value of the nextrun Div",
+            "default":"Next Run is ???"
+        },
+        "why":
+        {
+            "type":"string",
+            "description":"Text Value of the why Div",
+            "default":"This marathon is collecting funds to help MunchaKoopas and MooMooAkai Get to SGDQ"
+        }
+
+    },
+    "required":["welcome","nextrun","why"]
+}
